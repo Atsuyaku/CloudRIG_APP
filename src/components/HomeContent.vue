@@ -15,7 +15,7 @@
                     <div
                         class="display-4 font-weight-black white--text text-center "
                     >
-                        CloudRIG
+                         CloudRIG
                     </div>
                 </v-col>
             </v-row>
