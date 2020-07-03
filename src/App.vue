@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <router-view />
+    <app-navigation></app-navigation>
+    <router-view/>
   </div>
 </template>
 <style>
@@ -12,5 +13,12 @@
     text-align: center;
     padding: 0px;
     margin: 0px;
+    background-color: rgb(52, 73, 94);
   }
 </style>
+<script>
+  import AppNavigation from "./components/AppNavigation";
+  export default {
+    components: {AppNavigation}
+  }
+</script>
