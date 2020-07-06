@@ -1,28 +1,75 @@
 <template>
     <v-container fill-height class="home-content">
-        <v-layout justify-center align-center column pa-10>
-            <v-row no-gutters align="center">
-                <v-col>
+        <v-layout column pa-10>
+            <v-row no-gutters>
+                <v-col offset="5">
                     <div
-                        class="display-4 font-weight-black white--text text-center "
-                    >
-                         My Computers
-                    </div>
+                        class="font-weight-black white--text" style="font-size: xx-large "
+                >
+                    My Computers
+                </div>
                 </v-col>
             </v-row>
 
-
             <v-row>
-                <v-col>
+                <v-col cols="2">
+                    <router-link tag="span" to="/MachineCreation">
                     <v-btn dark
                            depressed
-                       style=" background-color:transparent;"
+                       style=" background-color:transparent; "
                        class="white"
+                           min-height="150px"
                     >
-                        <v-icon large color="white">
+                        <v-icon color="white" size="150">
                             far fa-plus-square
                         </v-icon>
                     </v-btn>
+                    </router-link>
+                </v-col>
+
+                <v-col cols="2">
+                    <router-link tag="span" to="/MachineCreation">
+                    <v-btn dark
+                           depressed
+                           style=" background-color:transparent; "
+                           class="white"
+                           min-height="150px"
+                    >
+                        <v-icon color="white" size="150">
+                            far fa-plus-square
+                        </v-icon>
+                    </v-btn>
+                    </router-link>
+                </v-col>
+
+                <v-col cols="2">
+                    <router-link tag="span" to="/MachineCreation">
+                    <v-btn dark
+                           depressed
+                           style=" background-color:transparent; "
+                           class="white"
+                           min-height="150px"
+                    >
+                        <v-icon color="white" size="150">
+                            far fa-plus-square
+                        </v-icon>
+                    </v-btn>
+                    </router-link>
+                </v-col>
+
+                <v-col cols="2">
+                    <router-link tag="span" to="/MachineCreation">
+                    <v-btn dark
+                           depressed
+                           style=" background-color:transparent; "
+                           class="white"
+                           min-height="150px"
+                    >
+                        <v-icon color="white" size="150">
+                            far fa-plus-square
+                        </v-icon>
+                    </v-btn>
+                    </router-link>
                 </v-col>
             </v-row>
         </v-layout>

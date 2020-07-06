@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import MachineCreation from "../views/MachineCreation";
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,11 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home
   },
+    {
+      path: '/MachineCreation',
+      name: 'MachineCreation',
+      component: MachineCreation
+    },
   {
     path: '/about',
     name: 'About',

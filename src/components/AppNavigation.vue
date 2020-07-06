@@ -11,9 +11,11 @@ import Vue from 'vue' import Vuetify from 'vuetify/lib'
             clipped
             mini-variant
             color="rgb(44, 62, 80)"
+
+
         >
             <router-link tag="span" to="/"
-            ><v-btn icon style="margin-top: 15px;">
+            ><v-btn icon style="margin-top: 15px;margin-left: 10px;">
           <v-avatar size="40px">
             <img src="https://www.cloudrig.io/img/cloudrig-logo.png">
           </v-avatar>

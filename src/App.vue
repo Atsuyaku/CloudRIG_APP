@@ -5,12 +5,12 @@
   </div>
 </template>
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
   * {
-    font-family: "Baloo Tamma 2", cursive;
+    font-family: "Roboto", sans-serif;
+    color: white;
   }
   body {
-    text-align: center;
     padding: 0px;
     margin: 0px;
     background-color: rgb(52, 73, 94);
