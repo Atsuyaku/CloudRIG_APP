@@ -6,7 +6,7 @@
                 >
                     Create a machine
                 </div>
-                <v-form ref="form" style="margin-left: 30px;">
+                <div style="margin-left: 30px;">
 
                     <v-text-field
                             label="Name"
@@ -34,10 +34,11 @@
                             :rules="[(v) => !!v || 'You must agree to continue!']"
                             required
                     ></v-checkbox>
-
+                    <router-link tag="button" to="/CSP">
                     <v-btn style="margin-right:20px" @click="submit" :class="{ red: !valid, green: !valid }" >submit</v-btn>
+                    </router-link>
                     <v-btn @click="clear">clear</v-btn>
-                </v-form>
+                </div>
             </v-app>
         </div>
 
