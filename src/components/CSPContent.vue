@@ -82,7 +82,7 @@
             <v-row>
 
                 <v-col style="margin-left: 90%; margin-top: 30%;">
-                    <router-link tag="span" to="/">
+                    <router-link tag="span" to="/Credentials">
                 <v-btn>NEXT</v-btn>
                     </router-link>
                 </v-col>

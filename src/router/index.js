@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import MachineCreation from "../views/MachineCreation";
 import CSP from "../views/CSP";
+import Credentials from "../views/Credentials";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ Vue.use(VueRouter)
       path: '/CSP',
       name: 'CSP',
       component: CSP
+    },
+    {
+      path: '/Credentials',
+      name: 'Credentials',
+      component: Credentials
     },
   {
     path: '/about',
