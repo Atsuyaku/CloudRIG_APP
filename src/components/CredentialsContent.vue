@@ -11,30 +11,27 @@
       >
         Credentials
       </div>
-      <v-row no-gutters justify="center">
-        <v-col>
-          <div style="margin-left: 30px;" align="center">
+
+      <v-row no-gutters >
+        <v-col offset="1">
+          <div style="margin-right: 20%;" align="right">
             <v-text-field
               label="Access key"
               required
               style="width: 25%;"
             ></v-text-field>
-
             <v-text-field
               label="Secret key"
               required
               style="width: 25%;"
             ></v-text-field>
 
-            <v-col style="margin-left: 90%; margin-top: 30%;">
-              <router-link tag="span" to="/">
-                <v-btn>NEXT</v-btn>
-              </router-link>
-            </v-col>
           </div>
+
         </v-col>
+        <v-col cols="1"><v-divider class="mx-0" vertical dark ></v-divider></v-col>
         <v-col>
-          <div align="center">
+          <div>
             <v-select
               label="AWS Profile"
               :items="profile"
@@ -43,6 +40,13 @@
               style="width: 20%;"
             ></v-select>
           </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col style="margin-left: 63%;">
+          <router-link tag="span" to="/">
+            <v-btn>NEXT</v-btn>
+          </router-link>
         </v-col>
       </v-row>
     </v-app>
