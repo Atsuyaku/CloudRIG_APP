@@ -2,11 +2,10 @@ import Vue from 'vue' import Vuetify from 'vuetify/lib'
 <template>
   <span>
     <v-navigation-drawer
-      app
       fixed
       v-model="drawer"
       dark
-      disable-resize-watcher
+      permanent
       floating
       clipped
       mini-variant

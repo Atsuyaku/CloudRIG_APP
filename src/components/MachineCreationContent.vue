@@ -1,7 +1,7 @@
 <template>
-  <div id="app" style="padding-left: 56px;">
+  <div style="padding-left: 56px;">
     <v-app
-      id="inspire"
+
       style="padding: 40px; background-color: transparent; width: 50%;"
     >
       <div

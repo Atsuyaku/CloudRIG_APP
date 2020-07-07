@@ -4,7 +4,7 @@
       <v-row no-gutters>
         <v-col offset="5">
           <div
-            class="font-weight-black white--text  "
+            class="font-weight-black white--text"
             style="font-size: xx-large; padding-bottom: 40px;"
           >
             My Computers
@@ -88,8 +88,4 @@ export default {
 </script>
 
 <style scoped>
-.v-btn {
-  text-indent: initial;
-  text-transform: none;
-}
 </style>
