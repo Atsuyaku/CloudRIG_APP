@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <app-navigation></app-navigation>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-  * {
-    font-family: "Roboto", sans-serif;
-    color: white;
-  }
-  body {
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(52, 73, 94);
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(52, 73, 94);
+}
 </style>
 <script>
-  import AppNavigation from "./components/AppNavigation";
-  export default {
-    components: {AppNavigation}
-  }
+import AppNavigation from "./components/AppNavigation";
+export default {
+  components: { AppNavigation },
+};
 </script>

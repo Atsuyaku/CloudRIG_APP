@@ -1,19 +1,17 @@
 <template>
-    <div>
+  <div>
     <div class="CSPContent">
-        <CSPContent></CSPContent>
+      <CSPContent></CSPContent>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
-    import CSPContent from "../components/CSPContent";
-    export default {
-        name: "CSP",
-        components: {CSPContent}
-    }
+import CSPContent from "../components/CSPContent";
+export default {
+  name: "CSP",
+  components: { CSPContent },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
