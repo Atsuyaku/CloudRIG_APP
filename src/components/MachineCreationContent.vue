@@ -28,12 +28,6 @@
           required
           style="width: 20%;"
         ></v-select>
-        <v-checkbox
-          label="Do you agree?"
-          v-model="checkbox"
-          :rules="[(v) => !!v || 'You must agree to continue!']"
-          required
-        ></v-checkbox>
         <router-link tag="button" to="/CSP">
           <v-btn
             style="margin-right: 20px;"
@@ -62,7 +56,7 @@ export default {
       ],
       select: null,
       regions: ["Europe East", "Europe West", "North America", "South America"],
-      checkbox: true,
+
     };
   },
   methods: {
