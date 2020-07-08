@@ -10,24 +10,30 @@
       >
         Create a machine
       </div>
-      <div style="margin-left: 30px;">
+      <div>
+        <v-row>
+  <v-col>
         <v-text-field
           label="Name"
           v-model="name"
           :rules="nameRules"
           :counter="20"
           required
-          style="width: 25%;"
+          style="width: 200px;"
         ></v-text-field>
-        <v-textarea style="width: 50%;" label="Description"></v-textarea>
+  </v-col>
+        <v-col>
         <v-select
           label="Region"
           v-model="select"
           :items="regions"
           :rules="[(v) => !!v || 'Item is required']"
           required
-          style="width: 20%;"
+          style="width: 200px;"
         ></v-select>
+        </v-col>
+        </v-row>
+        <v-textarea style="width: 460px;" label="Description"></v-textarea>
         <router-link tag="button" to="/CSP">
           <v-btn
             style="margin-right: 20px;"
@@ -36,7 +42,9 @@
             >submit</v-btn
           >
         </router-link>
-        <v-btn @click="clear">clear</v-btn>
+        <router-link tag="button" to="/">
+        <v-btn>Cancel</v-btn>
+        </router-link>
       </div>
     </v-app>
   </div>
