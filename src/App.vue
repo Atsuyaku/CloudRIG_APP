@@ -11,8 +11,6 @@
   color: white;
 }
 body {
-  padding: 0px;
-  margin: 0px;
   background-color: rgb(52, 73, 94);
 }
 html{
