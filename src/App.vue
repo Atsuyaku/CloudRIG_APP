@@ -15,6 +15,9 @@ body {
   margin: 0px;
   background-color: rgb(52, 73, 94);
 }
+html{
+  overflow-y: hidden;
+}
 </style>
 <script>
 import AppNavigation from "./components/AppNavigation";
