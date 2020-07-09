@@ -5,7 +5,11 @@
         <v-col offset="5">
           <div
             class="font-weight-black white--text"
-            style="font-size: xx-large; padding-bottom: 40px; padding-top: 30px;"
+            style="
+              font-size: xx-large;
+              padding-bottom: 40px;
+              padding-top: 30px;
+            "
           >
             My Computers
           </div>
@@ -16,24 +20,21 @@
         <v-col cols="2">
           <router-link tag="span" to="/MachineCreation">
             <v-btn
-                    dark
-                    depressed
-                    style="background-color: transparent; border: dashed; opacity: 0.6;"
-                    height="150px"
-                    width="150px"
-                    class="white"
-
+              dark
+              depressed
+              style="
+                background-color: transparent;
+                border: dashed;
+                opacity: 0.6;
+              "
+              height="150px"
+              width="150px"
+              class="white"
             >
               <v-icon color="white" size="80">fas fa-plus</v-icon>
             </v-btn>
           </router-link>
         </v-col>
-
-
-
-
-
-
       </v-row>
     </v-layout>
   </v-container>
@@ -45,5 +46,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,38 +1,37 @@
 <template>
-  <div id="app" style="padding-left: 56px;">
-    <v-app
-      id="inspire"
-      style="padding: 40px; background-color: transparent; width: 100%;"
-    >
+  <v-container class="CredentialsContent">
+    <v-layout column pa-10 style="padding: 40px; width: 100%;">
       <div
         class="font-weight-black white--text"
-        style="font-size: xx-large; margin-bottom: 20px;"
-        align="center"
+        style="font-size: xx-large; margin-bottom: 20px; padding-left: 45px;"
       >
         Credentials
       </div>
 
-      <v-row no-gutters >
-        <v-col offset="1">
-          <div style="margin-right: 20%;" align="right">
+      <v-row no-gutters>
+        <v-col cols="2">
+          <div style="margin-right: 20%;">
             <v-text-field
+              dark
               label="Access key"
               required
-              style="width: 25%;"
+              style="margin-left: 20%;"
             ></v-text-field>
             <v-text-field
+              dark
               label="Secret key"
               required
-              style="width: 25%;"
+              style="margin-left: 20%;"
             ></v-text-field>
-
           </div>
-
         </v-col>
-        <v-col cols="1"><v-divider class="mx-0" vertical dark ></v-divider></v-col>
+        <v-col cols="1"
+          ><v-divider class="mx-0" vertical dark></v-divider
+        ></v-col>
         <v-col>
           <div>
             <v-select
+              dark
               label="AWS Profile"
               :items="profile"
               :rules="[(v) => !!v || 'Item is required']"
@@ -43,14 +42,14 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col style="margin-left: 63%;">
+        <v-col style="margin-left: 35%;">
           <router-link tag="span" to="/">
-            <v-btn>NEXT</v-btn>
+            <v-btn dark>NEXT</v-btn>
           </router-link>
         </v-col>
       </v-row>
-    </v-app>
-  </div>
+    </v-layout>
+  </v-container>
 </template>
 <script>
 export default {

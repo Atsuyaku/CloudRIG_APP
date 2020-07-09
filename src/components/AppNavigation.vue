@@ -24,28 +24,33 @@ import Vue from 'vue' import Vuetify from 'vuetify/lib'
             ><v-avatar size="40px">
               <v-icon color="white" size="150">
                 fas fa-plus-circle
-              </v-icon> </v-avatar></v-btn
-        ></router-link>
+              </v-icon>
+            </v-avatar></v-btn
+          ></router-link
+        >
         <br />
 
         <router-link tag="span" to="/CSP"
-        ><v-btn icon style="margin-top: 20px; margin-left: 10px;"
-        ><v-avatar size="40px">
+          ><v-btn icon style="margin-top: 20px; margin-left: 10px;"
+            ><v-avatar size="40px">
               <v-icon color="white" size="150">
                 fas fa-cloud
-              </v-icon> </v-avatar></v-btn
-        ></router-link>
+              </v-icon>
+            </v-avatar></v-btn
+          ></router-link
+        >
         <br />
 
         <router-link tag="span" to="/Credentials"
-        ><v-btn icon style="margin-top: 20px; margin-left: 10px;"
-        ><v-avatar size="40px">
+          ><v-btn icon style="margin-top: 20px; margin-left: 10px;"
+            ><v-avatar size="40px">
               <v-icon color="white" size="150">
                 fab fa-aws
-              </v-icon> </v-avatar></v-btn
-        ></router-link>
+              </v-icon>
+            </v-avatar></v-btn
+          ></router-link
+        >
         <br />
-
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="rgb(44, 62, 80)" dark style="margin-left: 50px;">
