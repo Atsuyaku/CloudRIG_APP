@@ -13,7 +13,7 @@
 body {
   background-color: rgb(52, 73, 94);
 }
-html{
+html {
   overflow-y: hidden;
 }
 </style>

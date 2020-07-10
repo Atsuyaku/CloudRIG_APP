@@ -1,8 +1,12 @@
 <template>
   <div style="padding-left: 56px;">
     <v-app
-
-      style="padding-top: 40px; padding-left: 40px; background-color: transparent; width: 50%;"
+      style="
+        padding-top: 40px;
+        padding-left: 40px;
+        background-color: transparent;
+        width: 50%;
+      "
     >
       <div
         class="font-weight-black white--text"
@@ -12,26 +16,26 @@
       </div>
       <div>
         <v-row>
-  <v-col>
-        <v-text-field
-          label="Name"
-          v-model="name"
-          :rules="nameRules"
-          :counter="20"
-          required
-          style="width: 200px;"
-        ></v-text-field>
-  </v-col>
-        <v-col>
-        <v-select
-          label="Region"
-          v-model="select"
-          :items="regions"
-          :rules="[(v) => !!v || 'Item is required']"
-          required
-          style="width: 200px;"
-        ></v-select>
-        </v-col>
+          <v-col>
+            <v-text-field
+              label="Name"
+              v-model="name"
+              :rules="nameRules"
+              :counter="20"
+              required
+              style="width: 200px;"
+            ></v-text-field>
+          </v-col>
+          <v-col>
+            <v-select
+              label="Region"
+              v-model="select"
+              :items="regions"
+              :rules="[(v) => !!v || 'Item is required']"
+              required
+              style="width: 200px;"
+            ></v-select>
+          </v-col>
         </v-row>
         <v-textarea style="width: 460px;" label="Description"></v-textarea>
         <router-link tag="button" to="/CSP">
@@ -43,7 +47,7 @@
           >
         </router-link>
         <router-link tag="button" to="/">
-        <v-btn>Cancel</v-btn>
+          <v-btn>Cancel</v-btn>
         </router-link>
       </div>
     </v-app>
@@ -64,7 +68,6 @@ export default {
       ],
       select: null,
       regions: ["Europe East", "Europe West", "North America", "South America"],
-
     };
   },
   methods: {
