@@ -5,7 +5,7 @@
         padding-top: 40px;
         padding-left: 40px;
         background-color: transparent;
-        width: 50%;
+
       "
     >
       <div
@@ -16,28 +16,32 @@
       </div>
       <div>
         <v-row>
-          <v-col>
+          <v-col md="3">
             <v-text-field
               label="Name"
               v-model="name"
               :rules="nameRules"
               :counter="20"
               required
-              style="width: 200px;"
+              style="width: 100%;"
             ></v-text-field>
           </v-col>
-          <v-col>
+          <v-col md="3">
             <v-select
               label="Region"
               v-model="select"
               :items="regions"
               :rules="[(v) => !!v || 'Item is required']"
               required
-              style="width: 200px;"
+              style="width: 100%;"
             ></v-select>
           </v-col>
         </v-row>
-        <v-textarea style="width: 460px;" label="Description"></v-textarea>
+        <v-row>
+          <v-col md="6">
+            <v-textarea style="width: 100%;" label="Description"></v-textarea>
+          </v-col>
+        </v-row>
         <router-link tag="button" to="/CSP">
           <v-btn
             style="margin-right: 20px;"
