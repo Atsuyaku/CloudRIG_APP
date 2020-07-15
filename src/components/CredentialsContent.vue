@@ -1,43 +1,52 @@
 <template>
+  <div style="padding-left: 56px;">
   <v-app
     id="inspire"
-    style="padding: 40px; background-color: transparent; width: 100%;"
+    style="padding: 40px; background-color: transparent;"
   >
     <div
       class="font-weight-black white--text"
-      style="font-size: xx-large; margin-bottom: 20px; padding-left: 56px;"
+      style="font-size: xx-large; margin-bottom: 20px;"
     >
       Credentials
     </div>
-
+    <v-col>
     <v-row no-gutters>
-      <v-col cols="2">
-        <div style="margin-right: 20%;">
+      <v-col md="2">
+        <div>
           <v-text-field
             label="Access key"
             required
-            style="margin-left: 20%;"
-          ></v-text-field>
-          <v-text-field
-            label="Secret key"
-            required
-            style="margin-left: 20%;"
+
           ></v-text-field>
         </div>
       </v-col>
-      <v-col cols="1"><v-divider class="mx-0" vertical dark></v-divider></v-col>
-      <v-col>
+      <v-col cols="1" align="center" > <div style="margin-top: 10px; width: 15px;">or</div><v-divider class="mx-0" vertical dark></v-divider></v-col>
+
+      <v-col cols="2">
         <div>
           <v-select
             label="AWS Profile"
             :items="profile"
             :rules="[(v) => !!v || 'Item is required']"
             required
-            style="width: 20%;"
+
           ></v-select>
         </div>
       </v-col>
+
     </v-row>
+    <v-row no-gutters>
+      <v-col cols="2" xs="3">
+        <div>
+          <v-text-field
+                  label="Secret key"
+                  required
+
+          ></v-text-field>
+        </div>
+      </v-col>
+      </v-row>
     <v-row>
       <v-col style="margin-left: 35%;">
         <router-link tag="span" to="/">
@@ -45,7 +54,14 @@
         </router-link>
       </v-col>
     </v-row>
+    <v-row></v-row>
+    <v-row></v-row>
+    <v-row></v-row>
+    <v-row></v-row>
+    <v-row></v-row>
+    </v-col>
   </v-app>
+  </div>
 </template>
 <script>
 export default {

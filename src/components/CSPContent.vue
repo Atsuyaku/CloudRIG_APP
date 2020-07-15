@@ -1,24 +1,25 @@
 <template>
-  <v-container fill-height class="CSPContent">
-    <v-layout column pa-10>
-      <v-row no-gutters>
-        <v-col>
-          <div
-            class="font-weight-black white--text"
-            style="font-size: xx-large; margin-bottom: 70px;"
-          >
-            Select your cloud provider
-          </div>
-        </v-col>
-      </v-row>
+  <div style="padding-left: 56px;">
+    <v-app
+            style="
+        padding-top: 40px;
+        padding-left: 40px;
+        background-color: transparent;
 
-      <v-row>
-        <v-col cols="2">
+      "
+    >
+      <div
+              class="font-weight-black white--text"
+              style="font-size: xx-large; margin-bottom: 20px;"
+      >
+        Select your cloud provider
+      </div>
+      <v-row no-gutters>
+        <v-col md="1">
           <router-link tag="span" to="/Credentials">
             <v-btn
               dark
               depressed
-              class="white"
               style="
                 background-color: transparent;
                 border: dashed;
@@ -32,12 +33,10 @@
               </v-icon>
             </v-btn>
           </router-link>
-          <router-link tag="span" to="/MachineCreation">
-            <v-btn dark style="margin-top: 100px;">Previous</v-btn>
-          </router-link>
         </v-col>
-
-        <v-col cols="2">
+        <v-col md="2" lg="1">
+        </v-col>
+        <v-col md="1">
           <router-link to="/Credentials">
             <v-btn
               dark
@@ -60,7 +59,8 @@
             </v-btn>
           </router-link>
         </v-col>
-        <v-col cols="2">
+        <v-col cols="2" lg="1"></v-col>
+        <v-col md="1">
           <router-link tag="span" to="/Credentials">
             <v-btn
               dark
@@ -83,8 +83,8 @@
             </v-btn>
           </router-link>
         </v-col>
-
-        <v-col cols="2">
+        <v-col md="2" lg="1"></v-col>
+        <v-col md="1">
           <router-link tag="span" to="/Credentials">
             <v-btn
               dark
@@ -105,8 +105,18 @@
           </router-link>
         </v-col>
       </v-row>
-    </v-layout>
-  </v-container>
+      <v-row>
+        <router-link tag="span" to="/MachineCreation">
+          <v-btn dark style="margin-left: 20px;">Previous</v-btn>
+        </router-link>
+      </v-row>
+      <v-row></v-row>
+      <v-row></v-row>
+      <v-row></v-row>
+      <v-row></v-row>
+      <v-row></v-row>
+    </v-app>
+  </div>
 </template>
 
 <script>
