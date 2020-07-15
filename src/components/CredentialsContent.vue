@@ -15,7 +15,8 @@
       <v-col md="2">
         <div>
           <v-text-field
-            label="Access key"
+            placeholder="AKIAJSIE27KKMHXI3BJQ"
+            label="Access Key Id"
             required
 
           ></v-text-field>
@@ -33,14 +34,15 @@
 
           ></v-select>
         </div>
-      </v-col>
 
+      </v-col>
     </v-row>
     <v-row no-gutters>
       <v-col cols="2" xs="3">
         <div>
           <v-text-field
-                  label="Secret key"
+                  placeholder="5bEYu26084qjSFyclM/f2pz4gviSfoOg+mFwBH39"
+                  label="Secret access key "
                   required
 
           ></v-text-field>
@@ -48,10 +50,16 @@
       </v-col>
       </v-row>
     <v-row>
-      <v-col style="margin-left: 35%;">
-        <router-link tag="span" to="/">
+
+      <v-col>
+        <router-link tag="span" to="/CSP">
+          <v-btn dark style="margin-left: 20px;">Previous</v-btn>
+        </router-link>
+
+        <router-link tag="span" to="/" style="margin-left: 31%;">
           <v-btn>NEXT</v-btn>
         </router-link>
+          <v-btn href="https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html" style="margin-left: 10px; opacity: 0.7">HELP</v-btn>
       </v-col>
     </v-row>
     <v-row></v-row>
