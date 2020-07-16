@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import MachineCreation from "../views/MachineCreation";
 import CSP from "../views/CSP";
 import Credentials from "../views/Credentials";
+import MachineSumUp from "../views/MachineSumUp";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: "/Credentials",
     name: "Credentials",
     component: Credentials,
+  },
+  {
+    path: "/MachineSumUp",
+    name: "MachineSumUp",
+    component: MachineSumUp,
   },
   {
     path: "/about",
