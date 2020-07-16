@@ -58,7 +58,7 @@
                                     <v-btn dark style="margin-top: 30px; margin-left: 20px;">Previous</v-btn>
                                 </router-link>
 
-                                <router-link tag="span" to="/MachineSumUp" style=" margin-left: 31%;">
+                                <router-link tag="span" to="/LoadingScreen" style=" margin-left: 31%;">
                                     <v-btn style="margin-top: 30px;">CREATE</v-btn>
                                 </router-link>
                             </v-col>
@@ -68,15 +68,7 @@
                 </v-col>
 
             </v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
-            <v-row></v-row>
+
 
         </v-app>
     </div>

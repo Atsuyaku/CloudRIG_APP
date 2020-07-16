@@ -5,6 +5,7 @@ import MachineCreation from "../views/MachineCreation";
 import CSP from "../views/CSP";
 import Credentials from "../views/Credentials";
 import MachineSumUp from "../views/MachineSumUp";
+import LoadingScreen from "../views/LoadingScreen";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/MachineSumUp",
     name: "MachineSumUp",
     component: MachineSumUp,
+  },
+  {
+    path: "/LoadingScreen",
+    name: "LoadingScreen",
+    component: LoadingScreen,
   },
   {
     path: "/about",
