@@ -28,7 +28,6 @@
                 "
                 height="150px"
                 width="150px"
-
               >
                 <v-icon color="white" size="80">fas fa-plus</v-icon>
               </v-btn>

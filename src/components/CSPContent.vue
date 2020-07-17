@@ -1,16 +1,15 @@
 <template>
   <div style="padding-left: 56px;">
     <v-app
-            style="
+      style="
         padding-top: 40px;
         padding-left: 40px;
         background-color: transparent;
-
       "
     >
       <div
-              class="font-weight-black white--text"
-              style="font-size: xx-large; margin-bottom: 20px;"
+        class="font-weight-black white--text"
+        style="font-size: xx-large; margin-bottom: 20px;"
       >
         Select your cloud provider
       </div>
@@ -34,8 +33,7 @@
             </v-btn>
           </router-link>
         </v-col>
-        <v-col md="2" lg="1">
-        </v-col>
+        <v-col md="2" lg="1"> </v-col>
         <v-col md="1">
           <router-link to="/Credentials">
             <v-btn

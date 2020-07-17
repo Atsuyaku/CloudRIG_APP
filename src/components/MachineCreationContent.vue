@@ -5,7 +5,6 @@
         padding-top: 40px;
         padding-left: 40px;
         background-color: transparent;
-
       "
     >
       <div
