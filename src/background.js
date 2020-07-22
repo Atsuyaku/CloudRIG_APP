@@ -28,6 +28,7 @@ function createWindow() {
       // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
       nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
     },
+
   });
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
@@ -44,6 +45,8 @@ function createWindow() {
     win = null;
   });
 }
+
+
 
 // Quit when all windows are closed.
 app.on("window-all-closed", () => {
@@ -82,12 +85,12 @@ if (isDevelopment) {
   if (process.platform === "win32") {
     process.on("message", (data) => {
       if (data === "graceful-exit") {
-        app.quit();
+        app.exit();
       }
     });
   } else {
     process.on("SIGTERM", () => {
-      app.quit();
+      app.exit();
     });
   }
 }
